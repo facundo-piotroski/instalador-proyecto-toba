@@ -31,7 +31,7 @@ class Factory
         $container['env-instalacion'] = 'instalador.env';
 
         $container['general-log-file'] = function ($c) {
-            $dir = $c['base-dir'] . '/logs/siged.log';
+            $dir = $c['base-dir'] . '/logs/log_install_leu.log';
             // if(!is_dir($dir)){
             //     mkdir($dir);
             // }
@@ -56,16 +56,6 @@ class Factory
          */
         $container['main-logger'] = function ($c) {
             $logger = new Logger('MAIN');
-            $handler = $c['logger-handler'];
-            $logger->pushHandler($handler);
-            return $logger;
-        };
-
-        /**
-         * @return Logger
-         */
-        $container['sorteo-logger'] = function ($c) {
-            $logger = new Logger('SORTEO');
             $handler = $c['logger-handler'];
             $logger->pushHandler($handler);
             return $logger;
