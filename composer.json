@@ -1,0 +1,36 @@
+{
+   "repositories": [
+        {
+            "type": "composer",
+            "url": "https://satis.siu.edu.ar",
+            "exclude": ["siu-toba/framework", "siu-toba/rest"]
+        }
+    ],
+
+  "require": {
+        "siu-toba/framework": "~3.3.0",
+        "siu/instalador": "^1.7",
+        "mpdf/mpdf": "^8.0",
+        "siu/toba-db": "^1.0.3",
+        "iio/libmergepdf": "^4.0",
+        "jumbojett/openid-connect-php": "^0.9.2"
+  },
+
+  "scripts": {
+        "post-install-cmd": [
+            "composer run-script post-install-cmd -d ./vendor/siu-toba/framework/",
+            "sh bin/mover_archivos_toba.sh"
+        ],
+        "post-update-cmd": [
+            "composer run-script post-install-cmd -d ./vendor/siu-toba/framework/",
+            "sh bin/mover_archivos_toba.sh"
+        ]
+  },
+
+  "autoload": {
+    "psr-4": { "": "src" }
+  },
+  
+  "minimum-stability": "dev",
+  "prefer-stable" : true
+}
