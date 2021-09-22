@@ -16,7 +16,7 @@ class PermisosLeu extends Permisos
     public function inicializarPasos()
     {
         return [
-            new \SIU\Instalador\Toba\Paso\ParametrizarToba(),
+            //new \SIU\Instalador\Toba\Paso\ParametrizarToba(),
             new \PJM\Leu\Instalador\Paso\CorregirPermisosLeu(),
         ];
     }
