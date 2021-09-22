@@ -22,7 +22,7 @@ $worflowActualizarcion = new \SIU\Instalador\Toba\Workflow\Actualizacion($factor
 $cmdActualizar = new \SIU\Instalador\Consola\ComandoActualizar();
 $cmdActualizar->setWorkflow($worflowActualizarcion);
 
-$worflowPermisos = new PJM\Leu\Instalador\Workflow\PermisosLeu($factory);
+//$worflowPermisos = new PJM\Leu\Instalador\Workflow\PermisosLeu($factory);
 $worflowPermisos = new \SIU\Instalador\Toba\Workflow\Permisos($factory);
 $cmdPermisos = new \SIU\Instalador\Consola\ComandoPermisosSimple();
 $cmdPermisos->setWorkflow($worflowPermisos);
