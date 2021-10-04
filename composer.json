@@ -11,8 +11,8 @@
         "siu-toba/framework": "~3.3.0",
         "siu/instalador": "^1.7",
         "laminas/laminas-escaper": "2.7.0",
+        "siu/toba-db": "^1.0.3",
         #"mpdf/mpdf": "^8.0",
-        #"siu/toba-db": "^1.0.3",
         #"iio/libmergepdf": "^4.0",
         #"jumbojett/openid-connect-php": "^0.9.2",
         #"siu-toba/jasper": "*" 
