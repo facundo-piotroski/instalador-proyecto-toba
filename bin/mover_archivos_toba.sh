@@ -7,7 +7,7 @@ cp "$dir"/archivos_a_mover_toba_2_7/php/nucleo/componentes/interface/efs/toba_ef
 cp "$dir"/archivos_a_mover_toba_2_7/www/img/colapsado.gif vendor/siu-toba/framework/www/img/
 cp "$dir"/archivos_a_mover_toba_2_7/www/img/wait.gif vendor/siu-toba/framework/www/img/
 
-cp "$dir"/archivos_a_mover_toba_2_7/www/js/ckeditor/plugins/* vendor/siu-toba/framework/www/js/packages/ckeditor/plugins/ -R
-cp "$dir"/archivos_a_mover_toba_2_7/www/js/ckeditor/skins/* vendor/siu-toba/framework/www/js/packages/ckeditor/skins/ -R
+cp "$dir"/archivos_a_mover_toba_2_7/www/js/ckeditor/plugins/* vendor/siu-toba/framework/www/js/packages/ckeditor4/plugins/ -R
+cp "$dir"/archivos_a_mover_toba_2_7/www/js/ckeditor/skins/* vendor/siu-toba/framework/www/js/packages/ckeditor4/skins/ -R
 
 sudo chown :www-data vendor/siu-toba/framework/www/js/packages/ -R
