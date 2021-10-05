@@ -12,10 +12,10 @@
         "siu/instalador": "^1.7",
         "laminas/laminas-escaper": "2.7.0",
         "siu/toba-db": "^1.0.3",
+        "siu-toba/jasper": "*" 
         #"mpdf/mpdf": "^8.0",
         #"iio/libmergepdf": "^4.0",
-        #"jumbojett/openid-connect-php": "^0.9.2",
-        #"siu-toba/jasper": "*" 
+        #"jumbojett/openid-connect-php": "^0.9.2"
   },
    
    "require-dev": {
@@ -25,11 +25,11 @@
   "scripts": {
         "post-install-cmd": [
             "composer run-script post-install-cmd -d ./vendor/siu-toba/framework/",
-            #"sh bin/mover_archivos_toba.sh"
+            "sh bin/mover_archivos_toba.sh"
         ],
         "post-update-cmd": [
             "composer run-script post-install-cmd -d ./vendor/siu-toba/framework/",
-            #"sh bin/mover_archivos_toba.sh"
+            "sh bin/mover_archivos_toba.sh"
         ]
   },
 
