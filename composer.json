@@ -25,11 +25,11 @@
   "scripts": {
         "post-install-cmd": [
             "composer run-script post-install-cmd -d ./vendor/siu-toba/framework/",
-            "sh bin/mover_archivos_toba.sh"
+            #"sh bin/mover_archivos_toba.sh"
         ],
         "post-update-cmd": [
             "composer run-script post-install-cmd -d ./vendor/siu-toba/framework/",
-            "sh bin/mover_archivos_toba.sh"
+            #"sh bin/mover_archivos_toba.sh"
         ]
   },
 
